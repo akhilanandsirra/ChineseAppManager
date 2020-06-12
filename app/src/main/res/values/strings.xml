@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ChineseManager</string>
+    <string name="instructions">Click on \"Scan Now\" to manage installed Chinese Apps installed in your system.</string>
+</resources>

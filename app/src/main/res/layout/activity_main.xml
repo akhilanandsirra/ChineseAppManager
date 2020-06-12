@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/grad_bg">
+
+    <RelativeLayout
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/delete_icon" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_below="@id/icon"
+        android:textAlignment="center"
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/instructions"
+        android:textColor="@color/text"
+        android:fontFamily="@font/roboto_condensed_light"
+        android:textSize="18sp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/Options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ripple"
+            android:paddingStart="70dp"
+            android:paddingEnd="70dp"
+            android:text="Scan Now"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:textAllCaps="false"
+            android:textColor="@color/text" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
