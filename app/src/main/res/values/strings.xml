@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">ChineseManager</string>
+    <string name="app_name">Chinese App Manager</string>
     <string name="instructions">Click on \"Scan Now\" to manage Chinese Apps installed in your system.</string>
+    <string name="size">%.2f MB</string>
 </resources>

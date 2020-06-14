@@ -58,7 +58,8 @@
             android:text="Scan Now"
             android:fontFamily="@font/roboto_condensed_regular"
             android:textAllCaps="false"
-            android:textColor="@color/text" />
+            android:textColor="@color/text"
+            android:onClick="uninstall"/>
 
     </RelativeLayout>
 
