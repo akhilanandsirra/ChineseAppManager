@@ -8,11 +8,45 @@
     android:fitsSystemWindows="true"
     android:background="@drawable/grad_bg">
 
+    <RelativeLayout
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/doneAnimation"
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="tick.json"
+            app:lottie_loop="false"
+            />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chineseInfo"
+        android:layout_below="@id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_light"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_marginTop="0dp"
+        />
+
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/chineseInfo"
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
+        android:layout_marginTop="30dp"
         />
 
 </RelativeLayout>

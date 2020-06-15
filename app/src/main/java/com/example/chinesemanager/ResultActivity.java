@@ -1,6 +1,7 @@
 package com.example.chinesemanager;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -15,6 +16,7 @@ public class ResultActivity extends AppCompatActivity {
     //RecyclerView.Adapter adapter;
     AppsAdapter adapter;
     RecyclerView.LayoutManager recyclerViewLayoutManager;
+    public AppCompatTextView AppsInfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,19 +34,28 @@ public class ResultActivity extends AppCompatActivity {
         //adapter2 = new AppsAdapter(ResultActivity.this, new ApkInfoExtractor(ResultActivity.this).GetAllInstalledApkInfo());
         recyclerView.setAdapter(adapter);
 
+        int count = adapter.getItemCount();
+
+        AppsInfo=(AppCompatTextView) findViewById(R.id.chineseInfo);
+        if(count==0){
+            AppsInfo.setText("You have 0 Chinese Apps\nYou are Awesome!");
+        }
+        else {
+        AppsInfo.setText(String.format(getString(R.string.AppCount), count));}
+
     }
 
     @Override
     public void onPause() {
         super.onPause();
         //Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
+        //AppsInfo.setText(String.format(getString(R.string.AppCount), adapter.getItemCount()));
         adapter.destroyer();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        //Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
         adapter.start();
     }
 

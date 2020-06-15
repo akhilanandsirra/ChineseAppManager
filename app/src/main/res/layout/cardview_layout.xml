@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
 
     android:id="@+id/card_view"
     android:layout_width="fill_parent"
@@ -19,7 +20,6 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="60dp"
-
         >
         <ImageView
             android:id="@+id/imageview"
@@ -50,6 +50,19 @@
             android:textColor="@android:color/darker_gray"
             android:fontFamily="@font/roboto_condensed_regular"
             />
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/uninstall"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="trash.json"
+            app:lottie_loop="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            />
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

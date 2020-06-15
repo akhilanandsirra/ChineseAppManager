@@ -7,16 +7,20 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
+import android.widget.Toast;
 
 import androidx.core.content.ContextCompat;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 public class ApkInfoExtractor {
 
     Context context1;
+    HashSet<String> chineseApps;
 
     public ApkInfoExtractor(Context context2){
 
@@ -26,6 +30,8 @@ public class ApkInfoExtractor {
     public List<String> GetAllInstalledApkInfo(){
 
         List<String> ApkPackageName = new ArrayList<>();
+
+        //Toast.makeText(context1, ""+chineseApps, Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(Intent.ACTION_MAIN,null);
 
@@ -39,7 +45,7 @@ public class ApkInfoExtractor {
 
             ActivityInfo activityInfo = resolveInfo.activityInfo;
 
-            if(!isSystemPackage(resolveInfo) && !isSelfAppPackage(activityInfo.applicationInfo.packageName)){
+            if(!isSystemPackage(resolveInfo) && !isSelfAppPackage(activityInfo.applicationInfo.packageName)&&isChineseApp(activityInfo.applicationInfo.packageName)){
 
                 ApkPackageName.add(activityInfo.applicationInfo.packageName);
             }
@@ -61,6 +67,12 @@ public class ApkInfoExtractor {
         }else {
             return false;
         }
+    }
+
+    public boolean isChineseApp(String packageName){
+        String thisAppPackageName = context1.getPackageName();
+        chineseApps = new HashSet<String>(Arrays.asList(context1.getResources().getStringArray(R.array.chineseApps)));
+        return chineseApps.contains(packageName);
     }
 
     public Drawable getAppIconByPackageName(String ApkTempPackageName){

@@ -2,4 +2,69 @@
     <string name="app_name">Chinese App Manager</string>
     <string name="instructions">Click on \"Scan Now\" to manage Chinese Apps installed in your system.</string>
     <string name="size">%.2f MB</string>
+    <string name="AppCount">%d Chinese Apps Found</string>
+    <string-array name="chineseApps">
+        <item>com.zhiliaoapp.musically</item>
+        <item>com.zhiliao.musically.livewallpaper</item>
+        <item>free.vpn.unblock.proxy.turbovpn</item>
+        <item>cn.wps.moffice_eng</item>
+        <item>com.intsig.camscanner</item>
+        <item>com.lenovo.anyshare.gps</item>
+        <item>app.buzz.share</item>
+        <item>app.buzz.share.lite</item>
+        <item>com.ss.android.ugc.boomlite</item>
+        <item>com.ss.android.ugc.trill.go</item>
+        <item>com.ss.android.ugc.boom.livewallpaper</item>
+        <item>com.ss.android.ugc.boom</item>
+        <item>com.zhiliaoapp.musically.go</item>
+        <item>com.commsource.beautyplus</item>
+        <item>cn.xender</item>
+        <item>com.meitu.airbrush.vivo</item>
+        <item>com.beautyplus.pomelo.filters.photo</item>
+        <item>com.meitu.wheecam</item>
+        <item>com.meitu.meipaimv</item>
+        <item>com.meitu.beautyplusme</item>
+        <item>com.magicv.airbrush</item>
+        <item>com.meitu.makeup</item>
+        <item>com.meitu.meiyancamera</item>
+        <item>com.mt.mtxx.mtxx</item>
+        <item>com.tencent.iglite</item>
+        <item>com.tencent.ig</item>
+        <item>com.tencent.ludosuperstar</item>
+        <item>com.ngame.allstar.eu</item>
+        <item>com.tencent.godgame</item>
+        <item>com.hcg.cok.gp</item>
+        <item>com.moonton.mobilehero</item>
+        <item>com.mobile.legends</item>
+        <item>club.fromfactory</item>
+        <item>com.zzkko</item>
+        <item>com.romwe</item>
+        <item>com.tencent.mm</item>
+        <item>com.UCMobile.intl</item>
+        <item>com.uc.browser.en</item>
+        <item>com.ucturbo</item>
+        <item>com.CricChat.intl</item>
+        <item>com.videochat.livu</item>
+        <item>com.dc.hwsj</item>
+        <item>com.youdao.hindict</item>
+        <item>com.lilithgame.roc.gp</item>
+        <item>com.lilithgame.sgame.gp.oss</item>
+        <item>com.lilithgame.tgames.gp</item>
+        <item>com.lilithgames.hgame.gp.id</item>
+        <item>com.eg.android.AlipayGphone</item>
+        <item>com.weico.international</item>
+        <item>com.yottagames.mafiawar</item>
+        <item>com.domobile.applockwatcher</item>
+        <item>com.quvideo.xiaoying</item>
+        <item>com.quvideo.vivavideo.lite</item>
+        <item>com.quvideo.slideplus</item>
+        <item>com.lbe.parallel.intl</item>
+        <item>com.youdao.hindict</item>
+        <item>com.snowwhiteapps.downloader</item>
+        <item>sg.bigo.hellotalk</item>
+        <item>com.qidian.Int.reader</item>
+        <item>sg.bigo.live</item>
+        <item>sg.bigo.live.lite</item>
+        <item>video.like</item>
+    </string-array>
 </resources>

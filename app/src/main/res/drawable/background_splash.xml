@@ -3,9 +3,10 @@
 
     <item android:drawable="@drawable/grad_bg"/>
 
-    <item>
-        <bitmap android:src="@drawable/delete_white_96x96"
-            android:gravity="center"/>
-    </item>
+    <item
+        android:width="96dp"
+        android:height="96dp"
+        android:drawable="@drawable/delete_icon"
+        android:gravity="center" />
 
 </layer-list>
