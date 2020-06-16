@@ -1,4 +1,4 @@
-package com.example.chinesemanager;
+package com.akhil.chinesemanager;
 
 import org.junit.Test;
 

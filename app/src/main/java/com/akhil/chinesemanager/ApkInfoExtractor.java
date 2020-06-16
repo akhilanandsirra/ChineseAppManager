@@ -1,4 +1,4 @@
-package com.example.chinesemanager;
+package com.akhil.chinesemanager;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,7 +7,6 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
-import android.widget.Toast;
 
 import androidx.core.content.ContextCompat;
 
@@ -62,11 +61,7 @@ public class ApkInfoExtractor {
 
     public boolean isSelfAppPackage(String packageName){
         String thisAppPackageName = context1.getPackageName();
-        if(thisAppPackageName.equals(packageName)){
-            return true;
-        }else {
-            return false;
-        }
+        return thisAppPackageName.equals(packageName);
     }
 
     public boolean isChineseApp(String packageName){
