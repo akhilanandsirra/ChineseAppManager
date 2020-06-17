@@ -6,4 +6,7 @@
     <color name="gradStop"> #1E3B70</color>
     <color name="blackTransparent">#d3d3d3</color>
 
+    <color name="card">#141414</color>
+    <color name="cardText">#FFFFFF</color>
+
 </resources>
