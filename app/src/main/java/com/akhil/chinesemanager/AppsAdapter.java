@@ -1,4 +1,4 @@
-package com.example.chinesemanager;
+package com.akhil.chinesemanager;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -32,6 +32,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
     IntentFilter intentFilter;
     //BroadcastReceiver br;
     AppCompatTextView AppsInfo;
+    LottieAnimationView tick;
     int index;
 
     public AppsAdapter(Context context, List<String> list){
@@ -47,6 +48,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
         public TextView textView_App_Name;
         public TextView textView_App_Package_Name;
         public LottieAnimationView delete;
+        public LottieAnimationView tick;
 
         public ViewHolder (View view){
             super(view);
@@ -76,6 +78,8 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
             AppCompatActivity ResultActivity = (AppCompatActivity) context;
             AppsInfo = (AppCompatTextView) ResultActivity.findViewById(R.id.chineseInfo);
 
+            tick = (LottieAnimationView) ResultActivity.findViewById(R.id.doneAnimation);
+
             if (Objects.requireNonNull(intent.getAction()).equals("android.intent.action.PACKAGE_REMOVED")) {
                 Log.e(" BroadcastReceiver ", "onReceive called "
                         + " PACKAGE_REMOVED ");
@@ -83,7 +87,12 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
                 stringList.remove(index);
                 notifyItemRemoved(index);
                 notifyItemRangeChanged(index, getItemCount());
-                AppsInfo.setText(String.format(ResultActivity.getString(R.string.AppCount), getItemCount()));
+                if(getItemCount()==0){
+                    AppsInfo.setText("You have 0 Chinese Apps, You are Awesome!");
+                }
+                else{
+                AppsInfo.setText(String.format(ResultActivity.getString(R.string.AppCount), getItemCount()));}
+                tick.playAnimation();
             }
         }
     };
@@ -139,6 +148,8 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
                     notifyItemRemoved(position);
                     notifyItemRangeChanged(position, getItemCount());
                     AppsInfo.setText(String.format(ResultActivity.getString(R.string.AppCount), getItemCount()));
+                    tick = (LottieAnimationView) ResultActivity.findViewById(R.id.doneAnimation);
+                    tick.playAnimation();
                 }
                 else {
                     //Toast.makeText(context1, ""+ApplicationPackageName, Toast.LENGTH_SHORT).show();
@@ -165,6 +176,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
             pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
             return true;
         } catch (PackageManager.NameNotFoundException e) {
+            Log.d("error","error in AppsApdapter");
         }
 
         return false;
