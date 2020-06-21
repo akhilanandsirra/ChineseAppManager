@@ -1,14 +1,11 @@
-package com.example.chinesemanager;
+package com.akhil.chinesemanager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
-import android.widget.Toast;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -38,7 +35,7 @@ public class ResultActivity extends AppCompatActivity {
 
         AppsInfo=(AppCompatTextView) findViewById(R.id.chineseInfo);
         if(count==0){
-            AppsInfo.setText("You have 0 Chinese Apps\nYou are Awesome!");
+            AppsInfo.setText("You have 0 Chinese Apps, You are Awesome!");
         }
         else {
         AppsInfo.setText(String.format(getString(R.string.AppCount), count));}
