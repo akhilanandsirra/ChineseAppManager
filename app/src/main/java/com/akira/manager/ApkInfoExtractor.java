@@ -1,4 +1,4 @@
-package com.akhil.chinesemanager;
+package com.akira.manager;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
 
 import androidx.core.content.ContextCompat;
+
+import com.akira.manager.R;
 
 import java.io.File;
 import java.util.ArrayList;
