@@ -66,5 +66,63 @@
         <item>sg.bigo.live</item>
         <item>sg.bigo.live.lite</item>
         <item>video.like</item>
+        <item>com.forhy.clobaltimes</item>
+        <item>com.estrongs.android.pop</item>
+        <item>com.netqin.ps</item>
+        <item>com.uc.iflow</item>
+        <item>com.netease.mail</item>
+        <item>com.netease.mobimail</item>
+        <item>com.baidu.BaiduMap</item>
+        <item>com.baidu.searchbox</item>
+        <item>com.yubitu.android.YubiCollage</item>
+        <item>com.yubitu.android.YouFace</item>
+        <item>com.yubitu.android.BestieCam</item>
+        <item>com.tencent.qqlauncher</item>
+        <item>com.tencent.research.drop</item>
+        <item>com.tencent.mtt.intl</item>
+        <item>com.cleanmaster.mguard</item>
+        <item>com.tencent.qqpim</item>
+        <item>com.mi.global.shop</item>
+        <item>com.baidu.browser.inter.mini</item>
+        <item>com.baidu.browser.inter</item>
+        <item>com.estrongs.android.pop</item>
+        <item>com.tencent.token</item>
+        <item>com.tencent.mtt.intl</item>
+        <item>com.newsdog</item>
+        <item>com.apusapps.browser</item>
+        <item>com.quvideo.xiaoying</item>
+        <item>com.quvideo.vivavideo.lite</item>
+        <item>com.cyberlink.youperfect</item>
+        <item>com.cyberlink.youcammakeup</item>
+        <item>com.szipcs.duprivacylock</item>
+        <item>com.duapps.cleaner</item>
+        <item>com.mi.global.bbs</item>
+        <item>com.mi.global.jointly</item>
+        <item>com.tencent.mobileqq</item>
+        <item>com.tencent.weishi</item>
+        <item>com.tencent.androidqqmail</item>
+        <item>com.tencent.wework</item>
+        <item>com.tencent.qqmusic</item>
+        <item>com.tencent.weread</item>
+        <item>com.tencent.ttpic</item>
+        <item>com.qq.qcloud</item>
+        <item>com.tencent.weiyungallery</item>
+        <item>com.tencent.portfolio</item>
+        <item>com.qcloud.cos.client</item>
+        <item>com.tencent.qqcar</item>
+        <item>com.tencent.liveassistant</item>
+        <item>com.tencent.k12</item>
+        <item>com.tencent.weworklocal</item>
+        <item>com.tencent.qpaint</item>
+        <item>com.DUrecorder.screenrecorder.videorecorde</item>
+        <item>com.DU.speed.booster.Antivirus.cleaner</item>
+        <item>com.DUsavebattery.faster.charge</item>
+        <item>com.DU.antivirus.cleaner.boosterpro</item>
+        <item>com.virus.cleaner.antivirus</item>
+        <item>com.super.cleaner.antivirus</item>
+        <item>com.mi.android.globallauncher</item>
+        <item>com.xiaomi.midrop</item>
+        <item>com.miui.videoplayer</item>
+        <item>com.nemo.vidmate</item>
     </string-array>
 </resources>
