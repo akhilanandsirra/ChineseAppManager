@@ -1,4 +1,4 @@
-package com.akhil.chinesemanager;
+package com.akhil.unused;
 
 import android.content.Context;
 

@@ -15,6 +15,7 @@
     android:layout_marginEnd="20dp"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="@color/card"
     >
 
     <RelativeLayout
@@ -34,7 +35,7 @@
             android:layout_toEndOf="@id/imageview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#474747"
+            android:textColor="@color/cardText"
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
             android:fontFamily="@font/roboto_condensed_regular"

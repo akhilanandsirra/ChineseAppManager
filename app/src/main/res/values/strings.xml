@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Chinese App Manager</string>
-    <string name="instructions">Click on \"Scan Now\" to manage Chinese Apps installed in your system.</string>
+    <string name="app_name">Unwanted App Detector</string>
+    <string name="instructions">Click on \"Scan Now\" to manage Unwanted Apps installed in your system.</string>
     <string name="size">%.2f MB</string>
-    <string name="AppCount">%d Chinese Apps Found</string>
+    <string name="AppCount">%d Unwanted Apps Found</string>
     <string-array name="chineseApps">
         <item>com.zhiliaoapp.musically</item>
         <item>com.zhiliao.musically.livewallpaper</item>
@@ -124,5 +124,6 @@
         <item>com.xiaomi.midrop</item>
         <item>com.miui.videoplayer</item>
         <item>com.nemo.vidmate</item>
+        <item>us.zoom.videomeetings</item>
     </string-array>
 </resources>
