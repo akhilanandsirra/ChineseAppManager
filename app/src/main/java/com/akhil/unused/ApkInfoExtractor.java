@@ -1,4 +1,4 @@
-package com.akira.manager;
+package com.akhil.unused;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import android.graphics.drawable.Drawable;
 
 import androidx.core.content.ContextCompat;
 
-import com.akira.manager.R;
+import com.akhil.unused.R;
 
 import java.io.File;
 import java.util.ArrayList;

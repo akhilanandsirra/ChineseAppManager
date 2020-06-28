@@ -1,4 +1,4 @@
-package com.akhil.chinesemanager;
+package com.akhil.unused;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -21,6 +21,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.akhil.unused.R;
 
 import java.util.List;
 import java.util.Objects;
@@ -84,11 +85,14 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
                 Log.e(" BroadcastReceiver ", "onReceive called "
                         + " PACKAGE_REMOVED ");
                 //Toast.makeText(context, " onReceive !!!! PACKAGE_REMOVED",Toast.LENGTH_LONG).show();
-                stringList.remove(index);
+                if(index<getItemCount()){
+                    stringList.remove(index);
+                }
                 notifyItemRemoved(index);
                 notifyItemRangeChanged(index, getItemCount());
                 if(getItemCount()==0){
-                    AppsInfo.setText("You have 0 Chinese Apps, You are Awesome!");
+                    AppsInfo.setText("You have 0 Unwanted Apps, You are Awesome!");
+                    tick.playAnimation();
                 }
                 else{
                 AppsInfo.setText(String.format(ResultActivity.getString(R.string.AppCount), getItemCount()));}
@@ -140,6 +144,7 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.ViewHolder>{
 
                 //Intent intent = context1.getPackageManager().getLaunchIntentForPackage(ApplicationPackageName);
                 boolean installed = appInstalledOrNot(ApplicationPackageName);
+                index = position;
                 if(!installed){
                     Toast.makeText(context1, "App wasn't found in the list of installed apps.", Toast.LENGTH_SHORT).show();
                     AppCompatActivity ResultActivity = (AppCompatActivity) context1;

@@ -1,10 +1,12 @@
-package com.akhil.chinesemanager;
+package com.akhil.unused;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.akhil.unused.R;
 
 public class MainActivity extends AppCompatActivity {
 
