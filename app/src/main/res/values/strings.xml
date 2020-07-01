@@ -87,7 +87,6 @@
         <item>com.baidu.browser.inter</item>
         <item>com.estrongs.android.pop</item>
         <item>com.tencent.token</item>
-        <item>com.tencent.mtt.intl</item>
         <item>com.newsdog</item>
         <item>com.apusapps.browser</item>
         <item>com.quvideo.xiaoying</item>
@@ -98,7 +97,7 @@
         <item>com.duapps.cleaner</item>
         <item>com.mi.global.bbs</item>
         <item>com.mi.global.jointly</item>
-        <item>com.tencent.mobileqq</item>
+        <item>com.tencent.mobileqqi</item>
         <item>com.tencent.weishi</item>
         <item>com.tencent.androidqqmail</item>
         <item>com.tencent.wework</item>
@@ -125,5 +124,22 @@
         <item>com.miui.videoplayer</item>
         <item>com.nemo.vidmate</item>
         <item>us.zoom.videomeetings</item>
+        <item>com.kwai.video</item>
+        <item>com.supercell.clashofclans</item>
+        <item>com.dianxinos.dxbs</item>
+        <item>com.ksmobile.cb</item>
+        <item>com.antutu.ABenchMark</item>
+        <item>com.cmcm.armorfly</item>
+        <item>com.ehawk.antivirus.applock.wifi</item>
+        <item>com.weico.international</item>
+        <item>com.wMivideocallandchat_9258593</item>
+        <item>com.duapps.recorder</item>
+        <item>com.yy.hiyo</item>
+        <item>com.baidu.baiducamera</item>
+        <item>com.videochat.livechat.wemeet</item>
+        <item>com.cam001.selfie</item>
+        <item>sweet.selfie.lite</item>
+        <item>com.baidu.baidutranslate</item>
+        <item>com.ai.bfly</item>
     </string-array>
 </resources>
