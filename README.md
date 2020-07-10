@@ -4,6 +4,6 @@
 
 Developed and deployed an Android application for detecting/managing Chinese Applications installed in your device.
 
-Slashed App scanning time by 85% by implementing RecyclerView and using Hash Table.
+Slashed App scanning time by **85%** by implementing **RecyclerView** and using **Hash Table.**
 
-Implemented a Broadcast Receiver to listen in on uninstall events from the system.
+Implemented a **Broadcast Receiver** to listen in on uninstall events from the system.
