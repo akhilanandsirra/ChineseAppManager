@@ -10,7 +10,7 @@ Slashed App scanning time by **85%** by implementing **RecyclerView** and using 
 
 Implemented a **Broadcast Receiver** to listen in on uninstall events from the system.
 
-[Playstore Link](https://play.google.com/store/apps/details?id=akhil.com.unused)
+[Playstore Link](https://play.google.com/store/apps/details?id=com.akhil.unused)
 
 
 ## Screenshots
