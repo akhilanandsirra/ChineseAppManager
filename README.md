@@ -1,4 +1,4 @@
-# Chinese App Manager
+# Malicious App Manager
 
 <a href="https://imgur.com/Q22hDmx"><img src="https://i.imgur.com/Q22hDmx.gif" title="Chinese App Detector" height="600"/></a>
 
